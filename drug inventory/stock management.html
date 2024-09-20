@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Management - Drug Inventory</title>
+    <link rel="stylesheet" href="stockmanagement.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <a href="home.html" class="logo">Drug<span>Dynamics</span></a>
+            <nav>
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="stockmanagement.html">Stock Management</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Order & Analysis</h2>
+
+        
+
+        <!-- Existing Stock Table -->
+        <h3>Current Stock</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Drug Name</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="stock-table-body">
+                <tr>
+                    <td>Paracetamol</td>
+                    <td>10</td>
+                    <td>
+                        <button class="btn btn-delete">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Insulin 100mg</td>
+                    <td>5</td>
+                    <td>
+                        <button class="btn btn-delete">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-order">Order</button>
+
+        <!-- New Analysis Table -->
+        <h3>Pharmacy Data Analysis</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Date</th>
+                    <th>Medicine Code</th>
+                    <th>Coordinates</th>
+                    <th>Type of Medicine</th>
+                    <th>Quantity</th>
+                    <th>Arrival Date & Time</th>
+                    <th>Dispatched Date</th>
+                    <th>Certificate No.</th>
+                    <th>Application Date</th>
+                </tr>
+            </thead>
+            <tbody id="analysis-table-body">
+                <!-- Example Row -->
+                <tr>
+                    <td>John Doe</td>
+                    <td>2024-09-15</td>
+                    <td>MED123</td>
+                    <td>40.7128° N, 74.0060° W</td>
+                    <td>Pain Reliever</td>
+                    <td>3</td>
+                    <td>2024-09-15 10:30</td>
+                    <td>2024-09-16</td>
+                    <td>CERT789456</td>
+                    <td>2024-09-10</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DrugShop. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

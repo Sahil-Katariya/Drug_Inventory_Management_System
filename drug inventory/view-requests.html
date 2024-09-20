@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Registration Requests</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <ul>
+            <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="add-user.html"><i class="fas fa-user-plus"></i> Add User</a></li>
+            <li><a href="remove-user.html"><i class="fas fa-user-times"></i> Remove User</a></li>
+            <li><a href="view-requests.html"><i class="fas fa-user-check"></i> View Requests</a></li>
+            <li><a href="manage-roles.html"><i class="fas fa-users-cog"></i> Manage Roles</a></li>
+            <li><a href="settings.html"><i class="fas fa-cogs"></i> Settings</a></li>
+        </ul>
+    </aside>
+    
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Drug<span>Dynamics</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Admin Panel Sidebar and Main Content -->
+    <div class="admin-panel">
+        <!-- Include Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="add-user.html"><i class="fas fa-user-plus"></i> Add User</a></li>
+                <li><a href="remove-user.html"><i class="fas fa-user-times"></i> Remove User</a></li>
+                <li><a href="view-requests.html"><i class="fas fa-user-check"></i> View Requests</a></li>
+                <li><a href="manage-roles.html"><i class="fas fa-users-cog"></i> Manage Roles</a></li>
+                <li><a href="settings.html"><i class="fas fa-cogs"></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <section class="main-content">
+            <div id="view-requests" class="content-section">
+                <h2>View Registration Requests</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>User Type</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>JohnDoe</td>
+                            <td>john@example.com</td>
+                            <td>Pharmacy</td>
+                            <td>
+                                <button class="btn-approve"><i class="fas fa-check"></i> Approve</button>
+                                <button class="btn-reject"><i class="fas fa-times"></i> Reject</button>
+                            </td>
+                        </tr>
+                        <!-- More rows can be dynamically added -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
