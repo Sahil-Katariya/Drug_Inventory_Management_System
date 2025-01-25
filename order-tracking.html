@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking - DrugShop</title>
+    <link rel="stylesheet" href="order-tracking.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <a href="home.html" class="logo">Drug<span>Shop</span></a>
+            <nav>
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Order Tracking Section -->
+    <section class="tracking-section">
+        <div class="container">
+            <h1>Order Tracking</h1>
+            <div class="order-summary">
+                <h2>Order #12345</h2>
+                <p>Placed on: 12th August 2024</p>
+                <p>Expected Delivery: 19th August 2024</p>
+                <p>Total: $45.99</p>
+            </div>
+            <div class="tracking-details">
+                <h2>Tracking Details</h2>
+                <div class="progress-bar">
+                    <div class="step completed">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Order Placed</p>
+                    </div>
+                    <div class="step completed">
+                        <i class="fas fa-box"></i>
+                        <p>Packed</p>
+                    </div>
+                    <div class="step active">
+                        <i class="fas fa-truck"></i>
+                        <p>Shipped</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Out for Delivery</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-home"></i>
+                        <p>Delivered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DrugShop. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

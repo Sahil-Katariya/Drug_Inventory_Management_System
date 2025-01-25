@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Drug Inventory Shopping Site</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <a href="home.html" class="logo">Drug<span>Dynamics</span></a>
+            <nav>
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="#search">Medicine</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                    <li class="notification">
+                        <a href="#" class="notification-icon">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge">3</span>
+                        </a>
+                        <div class="notification-dropdown">
+                            <p>You have 3 new notifications</p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="container">
+            <h1>Welcome back, <span>User</span>!</h1>
+            <p>Find the best medicines for your needs, or explore new arrivals!</p>
+            <a href="#search" class="btn-cta">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Carousel Slider -->
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel-slide">
+                <div class="carousel-item active">
+                    <h2>50% Off on Pain Relief Medicines</h2>
+                    <p>Limited time offer on selected pain relief products.</p>
+                    <a href="#" class="btn-secondary">Shop Now</a>
+                </div>
+                <div class="carousel-item">
+                    <h2>Buy 1 Get 1 Free on Antibiotics</h2>
+                    <p>Exclusive deal for registered members!</p>
+                    <a href="#" class="btn-secondary">Shop Now</a>
+                </div>
+                <div class="carousel-item">
+                    <h2>Free Delivery on Orders Over $50</h2>
+                    <p>Enjoy free delivery on all orders over $50. Shop now!</p>
+                    <a href="#" class="btn-secondary">Shop Now</a>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <div class="carousel-controls">
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+            </div>
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Medicine Section -->
+    <section class="search-section" id="search">
+        <div class="container">
+            <h2>Search for Medicines</h2>
+            <form class="search-form">
+                <div class="input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for medicines..." required>
+                </div>
+                <button type="submit" class="btn-primary">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <h2>Browse By Category</h2>
+            <div class="categories-grid">
+                <div class="category-item">
+                    <i class="fas fa-pills fa-3x"></i>
+                    <h3>Pain Relief</h3>
+                    <p>Find effective pain relief solutions.</p>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-capsules fa-3x"></i>
+                    <h3>Antibiotics</h3>
+                    <p>Broad-spectrum antibiotics to treat infections.</p>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-syringe fa-3x"></i>
+                    <h3>Diabetes Management</h3>
+                    <p>Manage diabetes with the right medicines.</p>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-vial fa-3x"></i>
+                    <h3>Supplements</h3>
+                    <p>Explore a range of vitamins and supplements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Medicines Section -->
+    <section class="trending-medicine">
+        <div class="container">
+            <h2>Trending Medicines</h2>
+            <div class="medicine-grid">
+                <div class="medicine-item">
+                    <h3>Paracetamol</h3>
+                    <p>500 mg | Pain relief</p>
+                    <button class="btn-primary">Buy Now</button>
+                </div>
+                <div class="medicine-item">
+                    <h3>Amoxicillin</h3>
+                    <p>250 mg | Antibiotic</p>
+                    <button class="btn-primary">Buy Now</button>
+                </div>
+                <div class="medicine-item">
+                    <h3>Insulin</h3>
+                    <p>100 IU | Diabetes Management</p>
+                    <button class="btn-primary">Buy Now</button>
+                </div>
+                <div class="medicine-item">
+                    <h3>Ibuprofen</h3>
+                    <p>200 mg | Pain relief</p>
+                    <button class="btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated!</h2>
+            <p>Subscribe to our newsletter to get the latest updates and offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email..." required>
+                <button class="btn-primary" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DrugShop. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- JavaScript for carousel and scroll to top functionality -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
